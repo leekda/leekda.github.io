@@ -1,98 +1,82 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
   <meta charset="utf-8">
   
   <title>Archives | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+    
+<link rel="stylesheet" href="/css/highlight.css">
+
+  
   <meta property="og:type" content="website">
 <meta property="og:title" content="Hexo">
 <meta property="og:url" content="http://example.com/archives/index.html">
 <meta property="og:site_name" content="Hexo">
 <meta property="og:locale" content="en_US">
 <meta property="article:author" content="John Doe">
-<meta name="twitter:card" content="summary">
-  
-  
-    <link rel="shortcut icon" href="/favicon.ico">
-  
-  
-<link rel="stylesheet" href="/css/typing.css">
+<meta name="twitter:card" content="summary"><meta name="generator" content="Hexo 7.3.0"></head>
 
-  
-<link rel="stylesheet" href="/css/donate.css">
-
-  
-  
+<body>
+  <div id="wrapper">
+    <header id="header">
+  <h1 id="title">
+    <a href="/">Hexo</a>
+  </h1>
+  <nav>
     
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3/dist/jquery.fancybox.min.css">
-
-  
-<meta name="generator" content="Hexo 7.3.0"></head>
-
-  
     
-      <body>
+      
+      <a class="nav-link" href="/">Home</a>
     
-  
-      <div id="container" class="container">
-        <div class="archive-container">
-  <header id="header" class="header">
-  <nav class="mobile-nav">
-    <h1 class="nickname">NickName</h1>
-    <ul class="mobile-nav-menu">
-      <label for="mobile-menu-toggle"><a id="menu-button">&#9776; Menu</a></label>
-      <input type="checkbox" id="mobile-menu-toggle"/>
-      <ul class="mobile-nav-link">
-        
-        <a href="/">Home</a>
-        
-        <a href="/archives">Archives</a>
-        
-        <a href="/about">About</a>
-        
-      </ul>
-    </ul>
-  </nav>
-	
-		<nav id="main-nav" class="main-nav nav-left">
-	
-	
-	  <a class="main-nav-link" href="/">Home</a>
-	
-	  <a class="main-nav-link" href="/archives">Archives</a>
-	
-	  <a class="main-nav-link" href="/about">About</a>
-	
+      
+        <span class="nav-spacer">×</span>
+      
+      <a class="nav-link" href="/archives">Archives</a>
+    
+    
   </nav>
 </header>
 
-  
-    <hr class="header-hr header-hr-left"/>
-  
+    <div id="content">
+      
+  <section class="archives-wrap" style="margin-bottom: 0.5em;">
+    <input class="hidden-input" type="checkbox" onClick="tgl(this)" id="toggle-all">
+    <label class="month" for="toggle-all">Toggle all</label>
+  </section>
   
   
   
     
     
+    
+      
       
       
       <section class="archives-wrap">
-        <div class="archives">
+        <input class="hidden-input" type="checkbox" name="expand" id="expand1">
+        <label class="month" for="expand1">February 2014</label>
+        <div class="archives hidden">
     
     <article class="archive-article archive-type-post">
   <div class="archive-article-inner">
     <header class="archive-article-header">
-      <a href="/2014/02/07/hello-world/" class="archive-article-date">
-  <time class="dt-published" datetime="2014-02-06T16:00:00.000Z" itemprop="datePublished">Feb 7 2014</time>
-</a>
+      <time class="archive-article-date" datetime="2014-02-06T16:00:00.000Z" itemprop="datePublished">7</time>
 
       
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2014/02/07/hello-world/">Hello World</a>
-    </h1>
+    <h2 class="archive-article-title" itemprop="name">
+      <a href="/2014/02/07/hello-world/">Hello World</a>
+      
+    </h2>
   
+
 
     </header>
   </div>
@@ -105,54 +89,32 @@
 
 
 
-</div>
-
-      </div>
-      
-  <footer id="footer" class="archive-footer footer">
-    
-  <hr/>
-  <div id="footerContent" class="footer-content">
-    <p>Lorem ipsum dolor sit amet, <strong>consectetur adipiscing elit.</strong> Fusce eget urna vitae velit <em>eleifend interdum at ac nisi. In nec ligula lacus. Cum sociis natoque</em> penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed eu cursus erat, ut dapibus quam. Archive</p>
-
-
-      </div>
-    </footer>
-
-      
-
-
-
-
-
-
-
-
-<script src="https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
-
-
-<script src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js"></script>
-
-
-
-  
-<script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3/dist/jquery.fancybox.min.js"></script>
-
-
-
-
-<script src="/js/typing.js"></script>
-
-<!--[if lt IE 9]>
-<script src="https://cdn.jsdelivr.net/npm/html5shiv@3/dist/html5shiv.min.js"></script>
-<![endif]-->
-
-
-
-
-
-
 
     </div>
-  </body>
+  </div>
+  
+  
+<link rel="stylesheet" href="/css/comments.css">
+
+
+
+
+<script type="text/javascript">
+let tgl=(s)=>{x=document.getElementsByName("expand");for(let i=0;i<x.length;i++)x[i].checked=s.checked;}
+</script>
+
+
+
+<div id="settings-container">
+  <div id="dark-mode">dark</div>
+  <div id="sans-font">sans</div>
+</div>
+<script type="text/javascript">
+let d=document,r=d.documentElement.style,f=r.setProperty.bind(r),l=localStorage,s=l.getItem('s')||(window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches),n=l.getItem('n'),m=d.getElementById("dark-mode"),b=()=>{f('--bg-color','#fafafa');f('--code-bg-color','#f4f4f4');f('--text-color','#212121');f('--secondary-color','#808080');f('--tertiary-color','#b0b0b0');f('--link-color','#b5c8cf');f('--link-hover-color','#618794');f('--link-bg-color','#dae4e7');f('--selection-color','#dae4e7');m.innerHTML="dark"},c=()=>{f('--bg-color','#212121');f('--code-bg-color','#292929');f('--text-color','#fff');f('--secondary-color','#c0c0c0');f('--tertiary-color','#6e6e6e');f('--link-color','#4d6b75');f('--link-hover-color','#96b1bb');f('--link-bg-color','#5d828e');f('--selection-color','#acc1c9');m.innerHTML="light"},o=d.getElementById("sans-font"),e=()=>{f('--body-stack','"Lora", "Georgia", "Times New Roman", serif');o.innerHTML="sans"},g=()=>{f('--body-stack','"Lato", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "Verdana", sans-serif');o.innerHTML="serif"};m.onclick=()=>{if(s==2){s=1;l.setItem('s',s);c()}else{s=2;l.setItem('s',s);b()}};o.onclick=()=>{if(n==2){n=1;l.setItem('n',n);g()}else{n=2;l.setItem('n',n);e()}};if(!s){s=2;l.setItem('s',2)};if(s==1){c()};if(!n){n=2;l.setItem('n',2)};if(n==1){g()};
+</script>
+
+
+
+
+</body>
 </html>
